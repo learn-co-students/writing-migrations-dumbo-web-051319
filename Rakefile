@@ -1,4 +1,6 @@
 require 'active_record'
+require 'pry'
+
 include ActiveRecord::Tasks
 
 DatabaseTasks.db_dir = 'db'
@@ -22,4 +24,9 @@ namespace :db do
     File.delete('db/schema.rb')
     drop_db
   end
+end
+
+desc 'drop into the Pry console'
+task console: :environment do
+  Pry.start
 end
