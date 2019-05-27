@@ -30,5 +30,5 @@ end
 #5: DATA TYPE
 #   Similarly how we did t.string :name when creating a table
 #   we are going to determine the data type
-#   Use a comma to separate, and put in the datay type
+#   Use a comma to separate, and put in the data type
 #   In this case, we want our new column (:grade) to be an :integer
